@@ -1,7 +1,13 @@
 package tn.medtech.sweng.gemo.daoimpl;
 
+package sample;
+
+import java.sql.*;
+
 public class UserDaoImpl {
-   public void insert(User user) {
+
+
+    public void insert(User user) {
 
         Connection connection = null;
         PreparedStatement preparedStatement = null;
@@ -119,9 +125,11 @@ public class UserDaoImpl {
 
 
     }
-  
+
+
     public User selectByUserName(String userName) {
-      
+
+
         User user = new User();
         Connection conection = null;
         PreparedStatement preparedStatement = null;
@@ -166,5 +174,8 @@ public class UserDaoImpl {
         }
 
         return user;
-   }
+
+    }
+
+
 }
